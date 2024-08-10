@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grubbfeed</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="/src/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/logo.png" type="image/x-icon"> 
+</head>
+<body>
+    
+    <div class="topBar">
+        <div>
+            <img src="src/logo.png" alt="">
+            <h1>Grubb<span>feed</span></h1>
+            
+        
+        </div>
+        
+    </div>
+    <div class="body">
+        <div id="page-home" class="page">
+            <h1>Grubb<span>feed</span></h1>
+            <h2>100% <span>Anonym</span> Elevdriven Social Platform</h2>
+            <button class="button-big"  id="takeMeToTheFeed">Ta mig till flödet</button>
+            <div class="srcoll-info">
+                <img src="src/arrow.png" class="arrow-scroll">
+                <p>Mer Information</p>
+            </div>
+            
+            
+            
+        </div>
+        <div id="home-extended">
+            <div>
+                <h1>Vad är Grubb<span>feed</span></h1>
+                <p>Grubbfeed är en anonym plattform för elever. Grubbfeed representerar en ny våg av sociala nätverk som prioriterar användarnas anonymitet. Det är en plattform skapad specifikt för elever vid Grubbeskolan, med syftet att erbjuda en säker och privat miljö där elever kan interagera utan att deras identitet avslöjas. Detta är en intressant utveckling i den digitala världen där integritet och anonymitet blir allt viktigare. Anonymiteten på Grubbfeed innebär att eleverna kan dela tankar, idéer och planera evenemang utan att oroa sig för att bli identifierade av andra elever eller lärare. Detta kan främja en mer öppen och ärlig kommunikation bland eleverna, eftersom rädslan för omedelbara konsekvenser minskar. Plattformen kan också fungera som en katalysator för kreativitet och samarbete, där eleverna kan organisera evenemang och aktiviteter utan vuxnas inblandning. Det är dock viktigt att notera att medan anonymitet kan erbjuda frihet, kommer det också med ansvar. Användare av Grubbfeed bör vara medvetna om vikten av att upprätthålla en respektfull och stödjande miljö, även när de är anonyma. Plattformen har potential att vara ett kraftfullt verktyg för elevengagemang och gemenskapsskapande, men det kräver också en kultur av förtroende och ansvar. Grubbfeed är inte bara en teknisk innovation, utan också en social experiment som kan ge insikter i hur ungdomar interagerar i en digital miljö när de är befriade från sociala etiketter och förväntningar. Det är en fascinerande utveckling att följa, och det kommer att vara intressant att se hur det påverkar dynamiken och sammanhållningen bland eleverna på Grubbeskolan.</p>
+            </div>
+            <img src="src/happyman.jpg" alt="">
+        </div>
+        <div id="page-feed" class="page">
+            <img src="src/add.png" alt="+" title="Skapa Inlägg" id="feed-create-post">
+            <div id="feed-create-post-promt">
+                <div class="promt-window">
+                    <div class="promt-group">
+                        <input type="input" class="promt-field" placeholder="Titel" required="" maxlength="52">
+                        <label for="Titel" class="promt-label">Titel</label>
+                    </div>
+                    <div id="promt-preview-image"><input type="file" name="Ladda upp bild" id="promt-upload" accept="image/png, image/jpeg"><label for="promt-upload" class="custom-file-upload">Tryck för att välja bild</label></div>
+                    <div class="promt-button-row">
+                        <button style="background-color: rgb(180, 180, 180);" id="stop-promt">Avbryt</button>
+                        <button>Lägg upp</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="spacer"></div>
+            
+            <div class="post">
+                <div class="post-topbar">
+                    <div class="action-column">
+                        <div class="grid-buttons">
+                            <img src="src/arrowup.png" title="Rösta upp">
+                            <img src="src/arrow.png"   title="Rösta ner">
+                        </div>
+                        <div class="action-ratio-background" title="Andel röster"><div class="action-ratio"></div></div>
+                    </div>
+                    <div class="post-title">Jag var fel enda sedan början</div>
+                </div>
+                <div style="background-image: url('https://i.pinimg.com/736x/41/2a/d5/412ad5a892c8ee2a31aff4a37d353eee.jpg');"class="post-image" > <img src="src/download.png" alt="download" title="Ladda ner inlägg"></div>
+                
+            </div>
+
+
+           
+            
+        
+    </div>
+    <div class="bottomBar">
+        <h2>Credits</h2>
+        <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a>
+        <a href="https://www.pexels.com/sv-se/foto/man-foretag-nodsituation-kassaskap-3951638/" title="happy man">Glad man - Cottonbro Studio - Pexels</a>
+        <a href="https://uiverse.io/profile/mrhyddenn" title="input element">Input Element - MrHydden - UiVerse</a>
+    </div>
+    
+</body>
+
+<script  src="developer/files/javascript/main.js"></script>
+</html>
