@@ -1,0 +1,402 @@
+:root{
+    --black: rgb(43, 43, 43);
+    --background: linear-gradient( rgb(80, 80, 80),rgb(63,63,63));
+    --primary: rgb(54, 54, 54);
+    --accent: #99ff00;
+    --darkaccent: #538a00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+::selection{
+    
+    color: black;
+    background-color: var(--accent);
+}
+
+body{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span{
+    color: var(--accent);
+}
+.topBar{
+    position: absolute;
+    top:0px;
+    z-index: 300;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+
+}
+.topBar div{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+.topBar img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.topBar h1{
+    color: white;
+}
+.body{
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    min-height: calc( 100vh - 70px);
+
+   
+}
+
+.button-big{
+    border: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    border: 5px solid black;
+    
+    border-radius: 50px;
+    height: 100px;
+    width: 300px;
+    background-color: var(--accent);
+    transition: .5s;
+    margin: 40px;
+    
+}
+button:hover{
+    transform: translate(0, -5px);
+    box-shadow: 0px 0px 30px var(--accent);
+}
+.page{
+    
+    height: 100vh;
+}
+#page-home{
+    
+    
+    display: none;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+}
+#page-home h1{
+    color: white;
+    font-size: 10rem;
+}
+#page-home h2{
+    color: white;
+    font-size: xx-large;
+}
+.bottomBar{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    height: auto;
+    padding: 50px;
+    color: white;
+    background-color: var(--black);
+}
+a{
+    color: white;
+}
+.srcoll-info{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.arrow-scroll{
+    
+    height: 40px;
+    width: 40px;
+}
+
+#home-extended{
+    display: none;
+        
+    grid-template-columns: 50% 50%;
+
+    background-color: var(--black);
+    padding: 50px;
+}
+#home-extended h1{
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+#home-extended p{
+    font-size: large;
+    font-weight: 500;
+}
+#home-extended  img{
+    height: 500px;
+    margin-left: 180px;
+}
+
+
+#page-feed{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+}
+#feed-create-post{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+.spacer{
+    height: 75px;
+}
+.post{
+    background-color: var(--primary);
+    width: 900px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 900px;
+    grid-template-rows: 100px 900px;
+}
+.post-topbar{
+    display: grid;
+    grid-template-columns: 100px 800px;
+}
+.action-column{
+    display: grid;
+    grid-template-columns: 50px 50px;
+}
+.grid-buttons{
+    display: grid;
+    grid-template-columns: 50px ;
+    
+   
+}
+.grid-buttons img {
+    height: 24px;
+
+    margin: 13px;
+    margin-right: 0;
+    margin-left: 20px;
+    
+}
+
+
+.action-ratio-background{
+    
+    height: 74px;
+    margin: 13px;
+    position: relative;
+    border-radius: 20px;
+    width: 8px;
+    background-color: var(--black);
+    
+}
+
+.action-ratio{
+    height: 40px;
+    
+    position: absolute;
+    left: 0;
+    border-radius: 20px;
+    width: 8px;
+    background-color: var(--accent);
+}
+.post-title{
+    font-size: 2em;
+    margin-top: 5px;
+   
+    overflow-wrap: break-word;
+      
+      
+}
+
+.post-image{
+    border-radius: 15px;
+    width: 900px;
+    height: 600px;
+    position: relative;
+    background-color: rgb(39, 39, 39);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.post-image img{
+    position: absolute;
+    height: 40px;
+    left: 20px;
+    bottom: 10px;
+}
+img:hover{
+    background-color: rgba(0, 0, 0, 0.349);
+}
+img{
+    user-select: none;
+}
+
+
+
+/*Promt*/
+.promt-button-row{
+    position: absolute;
+    bottom: 0;
+}
+.promt-button-row button{
+    
+    border: 0;
+    font-size: 1em;
+    font-weight: 600;
+    border: 5px solid black;
+    
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    background-color: var(--accent);
+    transition: .5s;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    
+}
+#feed-create-post-promt{
+
+    z-index: 290;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    background-color: rgba(255, 255, 255, 0.555);
+    display: none;
+    align-items: center;
+    place-content: center;
+
+    
+}
+
+.promt-window{
+    background-color: var(--primary);
+    height: 700px; 
+    width: 900px;
+    margin-top: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+#promt-preview-image{
+    border-radius: 15px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(39, 39, 39);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#promt-upload{
+    
+    color: transparent;
+    background-color: transparent;
+    display: none;
+    height: 600px;
+    width: 900px;
+    
+}
+.custom-file-upload{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    background-color: transparent;
+    height: 600px;
+    width: 900px;
+    text-shadow: 0 0 15px black;
+    border-radius: 15px;
+}
+
+
+
+.promt-group {
+    margin-left: 50px;
+    margin-top: 20px;
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 800px;
+}
+  
+.promt-field {
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--accent);
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+  
+.promt-field::placeholder {
+    color: transparent;
+}
+  
+.promt-field:placeholder-shown ~ .promt-label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+  
+.promt-label {
+    position: absolute;
+    top: 0;
+    font-weight: 700;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: var(--accent);
+    pointer-events: none;
+}
+  
+.promt-field:focus {
+    padding-bottom: 6px;
+    
+    border-width: 3px;
+    border-color:  var(--accent);
+   
+}
+  
+.promt-field:focus ~ .promt-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: var(--accent);
+   
+}
+  
+/* reset input */
+.promt-field:required, .promt-field:invalid {
+    box-shadow: none;
+}
